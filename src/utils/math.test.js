@@ -18,7 +18,7 @@ describe("math utils", () => {
     expect(bagi(10, 2)).toBe(5);
   });
 
-  it("bagi dengan nol harus error", () => {
+  it("bagi dengan nol harus err", () => {
     expect(() => bagi(10, 0)).toThrow("Tidak bisa membagi dengan nol");
   });
 });

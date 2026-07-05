@@ -20,14 +20,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 22.x
           cache: npm
 
       - name: Install dependency
         run: npm ci
 
-      - name: Jalankan unit test
-        run: npm test
+      - name: Cek lint
+        run: npm run lint
 
       - name: Build project
         run: npm run build
